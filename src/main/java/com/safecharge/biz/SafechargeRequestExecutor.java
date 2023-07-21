@@ -35,7 +35,7 @@ import com.safecharge.util.APIConstants;
 public class SafechargeRequestExecutor {
 
     private static final Log logger = LogFactory.getLog(SafechargeRequestExecutor.class);
-    private static final Map<Class<? extends SafechargeBaseRequest>, Class<? extends SafechargeResponse>> RESPONSE_TYPE_BY_REQUEST_TYPE =
+    protected static final Map<Class<? extends SafechargeBaseRequest>, Class<? extends SafechargeResponse>> RESPONSE_TYPE_BY_REQUEST_TYPE =
             new HashMap<Class<? extends SafechargeBaseRequest>, Class<? extends SafechargeResponse>>() {
                 private static final long serialVersionUID = -5429154998138428048L;
 
@@ -134,9 +134,9 @@ public class SafechargeRequestExecutor {
                 }
             };
 
-    private static final Charset UTF8_CHARSET = Charset.forName("UTF-8");
+    protected static final Charset UTF8_CHARSET = Charset.forName("UTF-8");
     private static SafechargeRequestExecutor instance = null;
-    private static HttpClient httpClient;
+    protected static HttpClient httpClient;
     private static boolean isInitialized = false;
 
     public SafechargeRequestExecutor() {
