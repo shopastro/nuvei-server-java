@@ -34,6 +34,10 @@ public class Safecharge {
         this.serviceFactory = new ServiceFactory();
         this.requestExecutor = SafechargeRequestExecutor.getInstance();
     }
+    public Safecharge(SafechargeRequestExecutor safechargeRequestExecutor){
+        this.serviceFactory = new ServiceFactory();
+        this.requestExecutor = safechargeRequestExecutor;
+    }
 
     /**
      * <p>

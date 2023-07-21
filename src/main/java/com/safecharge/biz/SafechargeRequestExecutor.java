@@ -139,7 +139,7 @@ public class SafechargeRequestExecutor {
     private static HttpClient httpClient;
     private static boolean isInitialized = false;
 
-    private SafechargeRequestExecutor() {
+    public SafechargeRequestExecutor() {
     }
 
     /**

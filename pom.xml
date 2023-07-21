@@ -4,9 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.safecharge</groupId>
+    <groupId>com.shopastro.sps</groupId>
+<!--    <groupId>com.safecharge</groupId>-->
     <artifactId>safecharge-sdk-java</artifactId>
-    <version>1.7.1</version>
+    <version>1.7.1-SNAPSHOT</version>
 
     <name>Safecharge SDK for Java</name>
     <description>SafeCharge’s REST API SDK for Java provides developer tools for accessing Safecharge's REST API. SafeCharge’s REST API is a simple,
@@ -200,4 +201,12 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub OWNER Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/shopastro/app-template</url>
+        </repository>
+    </distributionManagement>
 </project>
